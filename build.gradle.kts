@@ -16,6 +16,7 @@ kotlin {
                 jvmTarget = "17"
             }
         }
+        publishAllLibraryVariants()
     }
 
     listOf(
@@ -87,8 +88,5 @@ android {
             isReturnDefaultValues = true
             isIncludeAndroidResources = true
         }
-    }
-
-    dependencies {
     }
 }
