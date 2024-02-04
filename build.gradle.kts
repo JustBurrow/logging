@@ -19,6 +19,8 @@ kotlin {
         publishAllLibraryVariants()
     }
 
+    jvm()
+
     listOf(
         iosArm64(),
         iosSimulatorArm64(),
@@ -36,6 +38,10 @@ kotlin {
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
+        }
+
+        jvmMain.dependencies {
+            implementation(libs.ch.qos.logback.classic)
         }
     }
 
