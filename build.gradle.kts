@@ -1,8 +1,8 @@
 import java.util.Properties
 
 plugins {
-    alias(libs.plugins.kotlinMultiplatform)
-    alias(libs.plugins.androidLibrary)
+    alias(libs.plugins.kotlin.multiplatform)
+    alias(libs.plugins.android.library)
     `maven-publish`
 }
 
@@ -43,7 +43,7 @@ kotlin {
         repositories {
             maven {
                 name = "GitHubPackages"
-                url = uri("https://maven.pkg.github.com/JustBurrow/logging")
+                url = uri("https://maven.pkg.github.com/JustBurrow/packages")
                 credentials {
                     username = properties["github.actor"] as String?
                         ?: System.getenv("GITHUB_ACTOR")
