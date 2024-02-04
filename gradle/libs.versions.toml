@@ -1,6 +1,6 @@
 [versions]
-agp = "8.2.1"
-kotlin = "1.9.20"
+agp = "8.2.2"
+kotlin = "1.9.22"
 
 [libraries]
 kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib", version.ref = "kotlin" }
